@@ -1,7 +1,5 @@
 package chapter1;
 
-import javax.naming.NameNotFoundException;
-
 public class Constructor1Lesson {
     public static void main(String[] args) {
         
