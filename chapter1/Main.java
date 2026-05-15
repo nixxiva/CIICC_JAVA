@@ -1,7 +1,16 @@
 package chapter1;
-
 import java.util.*;
 import otherFolder.*;
+
+/*  oder of element in a class
+
+P - package
+I - import
+C - class
+        properties 1
+        methods 3
+        constructors 2
+*/ 
 
 public class Main{
     public static void main(String[] args) {
