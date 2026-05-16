@@ -1,0 +1,10 @@
+{
+    "name": "Java 18 Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/java:18-bullseye",
+    "settings": {
+        "java.home": "/usr/local/openjdk-18"
+    },
+    "extensions": [
+        "vscjava.vscode-java-pack"
+    ]
+}
