@@ -1,6 +1,9 @@
 {
-    "name": "Java 18 Codespace",
+    "name": "Java 18 Codespace with LFS",
     "image": "mcr.microsoft.com/vscode/devcontainers/java:18-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/git-lfs:1": {}
+    },
     "customizations": {
         "vscode": {
             "settings": {
