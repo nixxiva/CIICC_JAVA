@@ -4,7 +4,7 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "java.jdt.ls.java.home": "/usr/local/sdkman/candidates/java/current"
+        "java.jdt.ls.java.home": "/usr/lib/jvm/msopenjdk-current"
       },
       "extensions": [
         "vscjava.vscode-java-pack"
