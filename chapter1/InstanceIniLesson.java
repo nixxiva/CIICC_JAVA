@@ -6,6 +6,7 @@ public class InstanceIniLesson {
         code = 999;
         System.out.println(code);
     }
+    
     int code = 67;
 
     {
