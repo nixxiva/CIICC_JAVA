@@ -1,9 +1,13 @@
 package chapter2;
 
 import chapter1.Toy;
+import chapter1.Toy;
 
 public class OperatorsLesson {
-    public static void main(String[] args) {
+    /**
+     * @param args
+     */
+    public static void main(String[] _args) {
         int a = +10;
         int b = 5;
         boolean isEating = false;
@@ -96,5 +100,7 @@ public class OperatorsLesson {
         System.out.println("toy4==toy3 = "+(toy4==toy3));
         System.out.println("toy4==null = "+(toy4==null));
        
+
+    
     }
 }
