@@ -34,7 +34,6 @@ public class Overloading {
         System.out.println(oll.fly());
         oll.fly(1,(byte)1);
         oll.fly(5.2435);
-        oll.fly(new AccessMod());
 
     }
 
