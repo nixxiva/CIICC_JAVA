@@ -1,59 +1,115 @@
 package chapter5;
 
-import otherFolder.A;
+import java.util.*;
 
-public class Inheritance {
-
+public class Inheritance{
     public static void main(String[] args) {
         FinalParent p1 = new FinalParent();
+        Lion animal = new Lion("muning",4,13123421);
     }
-
 }
 
-// pag nakafinal ang class bawal ma extend sa ibang class
 final class FinalParent{
     int number;
     void getParent(){
-    
-    }
 
+    }
 }
 
-// class ChildClass extends FinalParent {
-    
+// class ChildClass extends FinalParent{
 //     void getChildParent(){
 //         getParent();
 //         System.out.println(number);
 //     }
 // }
 
-class Animal2  {
+class Animal2 extends java.lang.Object {
     String name;
     int age;
-
-    public Animal2(String name, int age){
+    public Animal2(String name,int age){
         this.name = name;
         this.age = age;
     }
-    
 }
 
 class Lion extends Animal2{
-
     int LionId;
-    public Lion(String name, int age, int LionId){
-        super(name, age);
+    public Lion(String name, int age,int LionId){
+        super( name, age);
         this.LionId = LionId;
-}
-
-}
-
-class MountainLion extends Lion{
-    String locationString;
-    public MountainLion(String name, int age, int LionId, String locationString){
-        super(name, age, LionId);
         System.out.println(super.name);
     }
 
+}
+class MountainLion extends Lion{
+    
+    String locationString;
+    public MountainLion(String name, int age,int LionId,String locationString){
+        super(name, age, LionId);
+        this.locationString = locationString;
 
+    }
+
+    public static void main(String[] args) {
+        MountainLion ml = new MountainLion("anya", 0, 0, null);
+        System.out.println(ml.name);
+    }
+}
+
+class Canine{
+    static int dogFoodID = 5234;
+    public boolean hasFangs = true;
+    public double getAverageWeight(){
+        return 50;
+    }
+
+}
+class Pug extends Canine{
+
+    public double getAverageWeight(){
+        this.hasFangs = false;
+        System.out.println("Pug: "+hasFangs+"\nCanine: "+super.hasFangs);
+        return super.getAverageWeight()-30;
+    }
+}
+
+class Wolf extends Canine{
+    public double getAverageWeight(){
+        return super.getAverageWeight()+20;
+    }
+    Canine getAnimal(){
+        Wolf w1 = null;
+        return w1;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Canine().getAverageWeight());
+        System.out.println(new Wolf().getAverageWeight());
+        Hayop h1 =  new Dog();
+
+    }
+}
+
+abstract class Hayop{
+
+    int age;
+    String name;
+    public void eat(){
+        System.out.println("Hayop is eating");
+    }
+    public abstract String getName();
+    abstract int getAge();
+    abstract void setAge(int age);
+}
+
+class Dog extends Hayop{
+    public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setAge(int age){
+        
+    }
 }
